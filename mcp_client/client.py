@@ -32,6 +32,8 @@ class MCPClient:
     async def connect(self, protocol: str = None) -> bool:
         if not protocol:
             self.protocol = self._detect_protocol(self.url)
+            if not self.protocol:
+                return
         else:
             self.protocol = protocol.lower()
         

@@ -9,7 +9,7 @@ git checkout develop
 git pull origin develop
 
 echo -e "\nBranches disponibles :"
-branches=($(git branch -r | grep "feature/" | sed 's|origin/||' | sort -u))
+branches=($(git branch -r | sed 's|origin/||' | sort -u))
 
 if [ ${#branches[@]} -eq 0 ]; then
   echo "Aucune branche feature/ trouvée."

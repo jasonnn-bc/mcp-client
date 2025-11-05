@@ -9,7 +9,7 @@ async def main():
 
     # Get available tools
     tools = await client.list_tools()
-    print("Available tools")
+    print("Available tools :")
     print(tools)
 
     # Call distant tool

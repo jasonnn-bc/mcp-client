@@ -4,7 +4,7 @@ from contextlib import AsyncExitStack
 
 from mcp import ClientSession
 from mcp.client.sse import sse_client
-from mcp.types import Tool, CallToolResult, TextContent
+from mcp.types import CallToolResult, TextContent
 
 from mcp_client.utils import parse_list_tools, parse_call_tool
 
